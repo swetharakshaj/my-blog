@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+</head>
+<body>
+  <h3> Enter some text to ROT13: </h3>
+<form method = "post">
+  <table>
+    <tr>
+      <td class="label">
+        Username
+      </td>
+      <td>
+        <input type = "text" placeholder="Enter Username" name ="username" value = "{{username}}" required>
+      </td>
+      <td class ="error">
+        {{error-username}}
+      </td>
+    </tr>
+    <br><br>
+    <tr>
+      <td class ="label">
+        Password
+      </td>
+      <td>
+        <input type = "text" placeholder="Enter password" name ="password" required>{
+      </td>
+      <td class ="error">
+        {{error-password}}
+      </td>
+    </tr>
+    <br><br>
+    <tr>
+      <td class="label">
+        Verify password
+      </td>
+      <td>
+        <input type = "text" placeholder="Re-enter password" name="verifypassword" required>
+      </td>
+      <td class="error">
+        {{error-verify}}
+      </td>
+    </tr>
+    <br><br>
+    <tr>
+      <td class ="label">
+      </td>
+      <td>
+        <input type ="text" placeholder="Enter email id" name="email" value = "{{email}}">
+      </td>
+      <td class="error">
+        {{error-email}}
+      </td>
+    </tr>
+  </table>
+    <br><br>
+  <br>
+  <br>
+  <input type="submit">
+</form>
+</body>
+</html>

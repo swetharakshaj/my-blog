@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> Permalink </title>
+</head>
+<body>
+  {% block content%}
+  {{pageById.render() | safe}}
+  {% endblock %}
+</body>
+</html>
